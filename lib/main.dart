@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/parsing.dart';
 
 import './hello_world.dart';
 import './column_widget.dart';
@@ -11,6 +12,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Learn Andorid ', home: barisKolomWidget());
+    return MaterialApp(title: 'Learn Andorid ', home: Parsing());
   }
 }
