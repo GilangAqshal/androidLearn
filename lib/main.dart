@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/halaman_pertama.dart';
 import 'package:flutter_application_1/parsing.dart';
 
 import './hello_world.dart';
@@ -12,6 +13,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Learn Andorid ', home: Parsing());
+    return MaterialApp(title: 'Learn Andorid ', home: HalamanPertama());
   }
 }
