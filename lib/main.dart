@@ -15,6 +15,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Learn Andorid ', home: barisKolomWidget());
+    return MaterialApp(title: 'Learn Andorid ', home: ContohStateless());
   }
 }
