@@ -13,18 +13,18 @@ class _MahasiswaFormState extends State<MahasiswaForm> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Tambah Mahasiswa")),
+      appBar: AppBar(title: Text("Tambah Mahasiswa Cuy")),
       body: Form(
         key: _formKey,
         child: Column(
           children: [
             TextField(decoration: InputDecoration(labelText: "NIM")),
             SizedBox(height: 10),
-            TextField(decoration: InputDecoration(labelText: "Nama")),
+            TextField(decoration: InputDecoration(labelText: "Name")),
             SizedBox(height: 10),
             TextField(decoration: InputDecoration(labelText: "Alamat")),
             SizedBox(height: 10),
-            ElevatedButton(onPressed: () {}, child: Text("Simpan")),
+            ElevatedButton(onPressed: () {}, child: Text("Save")),
           ],
         ),
       ),
