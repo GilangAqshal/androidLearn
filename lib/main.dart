@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/contoh_stateless.dart';
 import 'package:flutter_application_1/halaman_pertama.dart';
+import 'package:flutter_application_1/mahasiswa_form.dart';
 import 'package:flutter_application_1/parsing.dart';
 import 'package:flutter_application_1/row.widget.dart';
 
@@ -15,6 +16,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Learn Andorid ', home: ContohStateless());
+    return MaterialApp(title: 'Aplikasi Mahasiswa ', home: MahasiswaForm());
   }
 }
