@@ -1,22 +1,16 @@
 import 'package:flutter/material.dart';
 
+import '/ui/poli_page.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Aplikasi Mahasiswa', home: ());
+    return MaterialApp(
+      title: 'Klinik APP',
+      debugShowCheckedModeBanner: false,
+      home: PoliPage(),
+    );
   }
 }
-
-// import 'package:flutter_application_1/contoh_stateless.dart';
-// import 'package:flutter_application_1/halaman_pertama.dart';
-// import 'package:flutter_application_1/mahasiswa_form.dart';
-// import 'package:flutter_application_1/parsing.dart';
-// import 'package:flutter_application_1/row.widget.dart';
-
-// import './hello_world.dart';
-// import './column_widget.dart';
-// import './baris_kolom.dart';
