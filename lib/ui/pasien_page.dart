@@ -20,19 +20,19 @@ class _PasienPageState extends State<PasienPage> {
           PasienItem(
             pasien: Pasien(
               nomorRm: "RM001",
-              nama: "Budi Santoso",
-              tanggalLahir: "1985-05-12",
+              nama: "Gilang Aqshal",
+              tanggalLahir: "2006-06-16",
               nomorTelepon: "085678901234",
-              alamat: "Jl. Merdeka No. 10, Jakarta",
+              alamat: "Jl. BDN Bekasi City",
             ),
           ),
           PasienItem(
             pasien: Pasien(
-              nomorRm: "RM002",
-              nama: "Dewi Lestari",
+              nomorRm: "RM003",
+              nama: "Ilham Safatulloh",
               tanggalLahir: "1995-08-20",
               nomorTelepon: "087890123456",
-              alamat: "Jl. Mawar No. 5, Bekasi",
+              alamat: "Jl. Mawar No. 7, Bekasi",
             ),
           ),
         ],
