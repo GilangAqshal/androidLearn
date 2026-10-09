@@ -1,30 +1,67 @@
 import 'package:flutter/material.dart';
 
 import '../model/pegawai.dart';
-import 'pegawai_detail.dart';
 
-class PegawaiItem extends StatelessWidget {
+class PegawaiDetail extends StatefulWidget {
   final Pegawai pegawai;
 
-  const PegawaiItem({super.key, required this.pegawai});
+  const PegawaiDetail({super.key, required this.pegawai});
 
   @override
+  State<PegawaiDetail> createState() => _PegawaiDetailState();
+}
+
+class _PegawaiDetailState extends State<PegawaiDetail> {
+  @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      child: Card(
-        child: ListTile(
-          title: Text(pegawai.nama),
-          subtitle: Text("NIP: ${pegawai.nip}"),
-        ),
-      ),
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => PegawaiDetail(pegawai: pegawai),
+    return Scaffold(
+      appBar: AppBar(title: const Text("Detail Pegawai")),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const SizedBox(height: 20),
+          Text(
+            "NIP : ${widget.pegawai.nip}",
+            style: const TextStyle(fontSize: 18),
           ),
-        );
-      },
+          Text(
+            "Nama : ${widget.pegawai.nama}",
+            style: const TextStyle(fontSize: 18),
+          ),
+          Text(
+            "Tanggal Lahir : ${widget.pegawai.tanggalLahir}",
+            style: const TextStyle(fontSize: 18),
+          ),
+          Text(
+            "No. Telepon : ${widget.pegawai.nomorTelepon}",
+            style: const TextStyle(fontSize: 18),
+          ),
+          Text(
+            "Email : ${widget.pegawai.email}",
+            style: const TextStyle(fontSize: 18),
+          ),
+          Text(
+            "Password : ${widget.pegawai.password}",
+            style: const TextStyle(fontSize: 18),
+          ),
+          const SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+                child: const Text("Ubah"),
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                child: const Text("Hapus"),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

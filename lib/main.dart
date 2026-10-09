@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/model/pasien.dart';
+import 'package:flutter_application_1/model/pegawai.dart';
+import 'package:flutter_application_1/ui/pasien_page.dart';
+import 'package:flutter_application_1/ui/pegawa_page.dart';
 
 import '/ui/poli_page.dart';
 
@@ -10,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Klinik APP',
       debugShowCheckedModeBanner: false,
-      home: PoliPage(),
+      home: PasienPage(),
     );
   }
 }
